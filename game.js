@@ -54,7 +54,7 @@ function btnpress(clk) {
 
 //sound play
 function play(snd) {
-  let sound = new Audio("/sounds/" + snd + ".mp3");
+  let sound = new Audio(`https://github.com/surajmurtadak/simongame/raw/master/sounds/${snd}.mp3`);
   sound.play();
 }
 
