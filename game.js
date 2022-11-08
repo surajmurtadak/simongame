@@ -30,7 +30,7 @@ function nextstep() {
   setTimeout(function () {
     btnpress(randomColor);
     play(randomColor);
-  }, 700);
+  }, 800);
 }
 
 //check answer
@@ -63,6 +63,7 @@ function gameOver() {
   level = 0;
   pattern = [];
   userClick = [];
+  started = false;
   $("h1").text("Game Over, press any key to start again");
   $("body").addClass("game-over");
   setTimeout(function () {
