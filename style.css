@@ -60,5 +60,38 @@ h1 {
 }
 .pressed {
   background-color: gray;
-  opacity: 0.5;
+  opacity: 0.8;
+  box-shadow: 2px 2px 10px 3px rgb(255, 255, 255);
+}
+.footerl {
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  bottom: 1rem;
+  left: 3rem;
+  color: rgba(240, 248, 255, 0.644);
+  font-family: "Codystar", cursive;
+  font-size: 2vw;
+}
+.footerr {
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  bottom: 1rem;
+  right: 3rem;
+  color: rgb(240, 248, 255);
+  font-family: "Codystar", cursive;
+  font-size: 2vw;
+}
+a {
+  text-decoration: none;
+  color: rgb(240, 248, 255);
+}
+a:hover {
+  text-decoration: none;
+  color: rgb(223, 219, 17);
+}
+a:active {
+  text-decoration: none;
+  color: rgb(240, 248, 255);
 }
