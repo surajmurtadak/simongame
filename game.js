@@ -10,6 +10,13 @@ $(document).keypress(function () {
     started = true;
   }
 });
+$(".startbtn").click(function () {
+  if (!started) {
+    nextstep();
+    $(this).addClass("btnclick");
+    started = true;
+  }
+});
 
 $(".btn").click(function () {
   let click = $(this).attr("id");
@@ -72,4 +79,5 @@ function gameOver() {
     $("body").removeClass("game-over");
   }, 400);
   play("wrong");
+  $(".startbtn").removeClass("btnclick");
 }
